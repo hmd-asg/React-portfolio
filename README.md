@@ -17,6 +17,8 @@ Visit my portfolio at this following link : [My porfolio](https://hamid-asg.netl
 
 ### Screenshots
 
+<img width="1440" alt="portfolio" src="https://github.com/user-attachments/assets/54785e42-70dc-40f1-adb5-df24fba865b0">
+
 ### License
 
 This project is licensed under [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) license
