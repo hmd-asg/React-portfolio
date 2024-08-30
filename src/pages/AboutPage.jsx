@@ -1,0 +1,18 @@
+// This is a static page mocking an "About Us" section for our fake user data
+export default function AboutPage() {
+  return (
+
+    <section className="about-section">
+      <div className="container">
+        <h2>About me</h2>
+        <img src="./assets/hamid.png" className="rounded-circle mb-4" alt="profile" />
+        <p>
+          Well-qualified Full Stack Developer familiar with wide range of programming utilities and languages.
+          Knowledgeable of backend and frontend development requirements. Handles any part of process with ease.
+          Collaborative team player with excellent technical abilities offering 2 years of related experience.
+        </p>
+
+      </div>
+    </section>
+  );
+}

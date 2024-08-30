@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar-custom {
+  background-color: #2C3E50;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: white;
+}
+
+.about-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-section h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.about-section p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.footer {
+  background-color: #34495E;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer i {
+  font-size: 30px;
+  margin: 0 15px;
+  color: white;
+}
+
+.footer i:hover {
+  color: #1ABC9C;
+}
