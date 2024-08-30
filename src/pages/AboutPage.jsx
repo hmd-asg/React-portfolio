@@ -5,11 +5,11 @@ export default function AboutPage() {
     <section className="about-section">
       <div className="container">
         <h2>About me</h2>
-        <img src="./assets/hamid.png" className="rounded-circle mb-4" alt="profile" />
+        <img src="./src/assets/hamid.png" className="rounded-circle mb-4" alt="profile" />
         <p>
-          Well-qualified Full Stack Developer familiar with wide range of programming utilities and languages.
-          Knowledgeable of backend and frontend development requirements. Handles any part of process with ease.
-          Collaborative team player with excellent technical abilities offering 2 years of related experience.
+          Well-qualified Full Stack Developer familiar with wide range of programming utilities and languages.<br />
+          Knowledgeable of backend and frontend development requirements. Handles any part of process with ease.<br />
+          Collaborative team player with excellent technical abilities offering 2 years of related experience.<br />
         </p>
 
       </div>

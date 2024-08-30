@@ -11,14 +11,20 @@ body {
   color: white;
 }
 
+.card img {
+  height: 150px;
+}
+
 .about-section {
   padding: 60px 20px;
   text-align: center;
 }
 
-.about-section h2 {
-  margin-bottom: 30px;
-  font-weight: bold;
+
+.about-section img {
+  margin-bottom: 10px;
+  width: 200px;
+  height: 200px;
 }
 
 .about-section p {
