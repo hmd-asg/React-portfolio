@@ -1,25 +1,45 @@
-// Bringing in the required import from 'react-router-dom'
 import { Link } from 'react-router-dom';
-import Navbar from './UI/Navbar';
+import { capitalizeFirstLetter } from '../utils/helpers';
 
-export default function Nav() {
-  // The Navbar UI component will render each of the Link elements in the links prop
+function Nav({ currentPage }) {
+  const pages = ['portfolio', 'contact', 'resume'];
+
   return (
-    <Navbar
-      links={[
-        <Link key={1} className="nav-link text-light" to="/">
-          About Me
-        </Link>,
-        <Link key={2} className="nav-link text-light" to="/portfolio">
-          Porfolio
-        </Link>,
-        <Link key={3} className="nav-link text-light" to="/contact">
-          Contact
-        </Link>,
-        <Link key={4} className="nav-link text-light" to="/resume">
-          Resume
-        </Link>,
-      ]}
-    />
+    <nav className="navbar navbar-expand-lg navbar-dark">
+      {/* Hamburger menu button */}
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+
+      {/* Collapsible nav links */}
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav ml-auto">
+          <li
+            className={`nav-item mx-2 ${currentPage === '/' && 'navActive'}`}
+            key="about"
+          >
+            <Link to="/">About</Link>
+          </li>
+          {pages.map((Page) => (
+            <li
+              className={`nav-item mx-2 ${currentPage === `/${Page}` && 'navActive'}`}
+              key={Page}
+            >
+              <Link to={`/${Page}`}>{capitalizeFirstLetter(Page)}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
   );
 }
+
+export default Nav;

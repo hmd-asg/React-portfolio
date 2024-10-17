@@ -1,16 +1,23 @@
-// Bringing in the required import from 'react-router-dom'
-import { Outlet } from 'react-router-dom';
-import Nav from './components/Nav';
-import Footer from './components/Footer'
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+// import Page from "./components/Page";
+import { Outlet, useLocation } from "react-router-dom";
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
-  // The Outlet component will conditionally swap between the different pages according to the URL
+  const currentPage = useLocation().pathname;
+
   return (
-    <>
-      <Nav />
-      <Outlet />
+    <div>
+      <Header>
+        <Nav currentPage={currentPage} />
+      </Header>
+      <main>
+        <Outlet />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

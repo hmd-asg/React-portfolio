@@ -1,10 +1,25 @@
-export default function Footer() {
+function Footer() {
+
+    const icons = [
+        {
+            name: "fab fa-github",
+            link: "https://github.com/hmd-asg"
+        },
+        {
+            name: "fab fa-linkedin",
+            link: "https://www.linkedin.com/in/hamidassaghli/"
+        }
+    ]
+
     return (
-        <footer className="footer">
-            <div className="container">
-                <a href="" target="_blank"><i className="fab fa-github"></i></a>
-                <a href="" target="_blank"><i className="fab fa-linkedin"></i></a>
-            </div>
+        <footer className="d-flex justify-content-center">
+            {icons.map(icon =>
+            (
+                <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer"><i className={icon.name}></i></a>
+            )
+            )}
         </footer>
     );
 }
+
+export default Footer;
