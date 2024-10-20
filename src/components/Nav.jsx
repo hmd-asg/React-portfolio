@@ -5,7 +5,7 @@ function Nav({ currentPage }) {
   const pages = ['portfolio', 'contact', 'resume'];
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark">
+    <nav className="navbar navbar-expand-lg navbar-light">
       {/* Hamburger menu button */}
       <button
         className="navbar-toggler"
@@ -15,6 +15,7 @@ function Nav({ currentPage }) {
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
+        style={{ color: "black", borderColor: "black" }}
       >
         <span className="navbar-toggler-icon"></span>
       </button>

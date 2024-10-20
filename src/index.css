@@ -26,6 +26,7 @@ main {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  background: url('./assets/cover-image.png') no-repeat;
 }
 
 p {
@@ -40,10 +41,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Aladin', cursive;
+  /* font-family: 'Aladin', cursive;
   font-weight: 500;
   margin: 5px 0;
-  line-height: 1.25;
+  line-height: 1.25; */
+  font-family: "Yeseva One", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 h1 {
@@ -84,7 +88,7 @@ a:hover {
 
 
 header a {
-  color: var(--light);
+  color: var(--secondary);
 }
 
 li {
@@ -92,10 +96,12 @@ li {
 }
 
 header {
-  background: var(--dark);
+  /* background: var(--dark);
   position: relative;
   overflow: hidden;
-  z-index: 2;
+  z-index: 2; */
+  /* border: #31343D solid 2px; */
+  border-bottom: #31343D solid 2px;
 }
 
 header h1 {
@@ -116,7 +122,7 @@ header img {
 
 nav {
   position: relative;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin: 30px 20px;
 }
 
@@ -164,6 +170,7 @@ ul.skills {
 
 ul.skills li {
   list-style-type: circle;
+  display: inline;
 }
 
 footer {
@@ -179,6 +186,10 @@ footer a {
 
 footer a:hover {
   opacity: 1;
+}
+
+.bullet-point li {
+  margin-left: 40px;
 }
 
 /* 

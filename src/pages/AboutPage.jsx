@@ -8,11 +8,9 @@ export default function AboutPage() {
         <h2>Full stack web Developer</h2>
         <img src={profileImage} className="rounded-circle mb-4" alt="profile" />
         <p>
-          Well-qualified Full Stack Developer familiar with wide range of programming utilities and languages.<br />
-          Knowledgeable of backend and frontend development requirements. Handles any part of process with ease.<br />
-          Collaborative team player with excellent technical abilities offering 2 years of related experience.<br />
-        </p>
+          I am a proficient Full Stack Developer with expertise in both frontend and backend technologies. Skilled in a variety of programming languages and tools, I excel at managing the entire development process, from creating responsive user interfaces to building robust backend systems. I prioritize writing clean, maintainable code and following best practices to ensure application performance and scalability. A collaborative team player, I thrive in diverse environments and approach problem-solving with creativity. I am committed to delivering high-quality, innovative solutions that meet both client and business needs, continuously seeking to enhance my skills and stay updated with industry trends.<br />
 
+        </p>
       </div>
     </section>
   );
